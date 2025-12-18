@@ -53,8 +53,6 @@ function App() {
         />
         <Route path="/privacy-policy" element={<Privacy />} />
         <Route path="/terms-and-conditions" element={<TermsConditions />} />
-        {/* <Route path="/payment" element={<PaymentButton />} /> */}
-        {/* <Route path="/paymentbutton" element={<PaymentButton />} /> */}
         <Route path="/whatsappform" element={<Whatsappform />} />
       </Routes>
     </>
