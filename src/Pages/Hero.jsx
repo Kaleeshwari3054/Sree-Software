@@ -1,25 +1,3 @@
-// import React from "react";
-// import banner from "../assets/Banner.jpeg";
-// // import { Link } from "lucide-react";
-
-// import { useNavigate } from "react-router-dom"; // ✅ add this
-// import "../Styles/Heros.css";
-// import {
-//   FaRupeeSign,
-//   FaRocket,
-//   FaBrain,
-//   FaCheckCircle,
-//   FaChartLine,
-//   FaHandshake,
-//   FaLifeRing,
-//   FaFire,
-//   FaTrophy,
-//   FaClock,
-//   FaBan,
-//   FaShareAlt,
-// } from "react-icons/fa";
-
-
 import React from "react";
 import banner from "../assets/Banner.jpeg";
 import { useNavigate } from "react-router-dom";

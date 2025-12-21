@@ -31,7 +31,7 @@ const Whatsappform = () => {
     e.preventDefault();
     if (validateForm()) {
       const message = `Name: ${formData.name}\nCompany: ${formData.company}\nContact: ${formData.phone}\nEmail: ${formData.email}\nPlace: ${formData.place}\nState: ${formData.state}`;
-      const whatsappUrl = `https://wa.me/919841419345?text=${encodeURIComponent(message)}`;
+      const whatsappUrl = `https://wa.me/95000 60448?text=${encodeURIComponent(message)}`;
       window.open(whatsappUrl, '_blank');
     }
   };
