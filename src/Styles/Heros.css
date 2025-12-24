@@ -1,5 +1,4 @@
-/* Heros.css - Complete Advanced Responsive Styles with Mobile Payment Card */
-
+/* Heros.css - PERFECT EVEN HEIGHTS + GAPS */
 :root {
     --primary-color: #e63946;
     --primary-hover: #d62828;
@@ -13,51 +12,55 @@
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* MAIN CONTAINER */
+/* MAIN CONTAINER - CENTERED */
 .main {
     max-width: 1400px;
     margin: 0 auto;
     padding: 2rem 1.5rem;
 }
 
-/* HERO LAYOUT */
+/* HERO LAYOUT - PERFECT 50/50 SPLIT */
 .hero.layout {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 4rem;
-    margin-bottom: 3rem;
+    gap: 2rem;              /* EVEN GAP */
+    height: 100vh;          /* PERFECT SCREEN HEIGHT */
+    align-items: stretch;   /* FULL HEIGHT STRETCH */
     max-width: 1200px;
     margin: 0 auto;
-    padding-left: 200px;
-    padding-right: 200px;
 }
 
-/* LEFT SIDE - Title + Banner Image */
+/* LEFT SIDE - PERFECT 55% */
 .hero-left {
-    flex: 1 1 55%;
+    flex: 0 0 55%;          /* FIXED WIDTH */
     display: flex;
     flex-direction: column;
+    justify-content: center; /* PERFECT CENTER */
+    align-items: center;     /* PERFECT CENTER */
     gap: 2rem;
-    max-width: 700px;
+    padding: 2rem;
 }
 
+/* PERFECT TITLE CENTER */
 .hero-title {
-    background-clip: text;
-    -webkit-background-clip: text;
-    font-size: 40px;
+    font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 900;
     color: #e60012;
+    text-align: center;
+    margin: 0;
+    line-height: 1.2;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
+/* PERFECT 400px IMAGE */
 .hero-banner-wrapper {
-    width: 60%;
-    align-self: flex-start;
+    width: 80%;
+    /* max-width: 700px; */
+    height: 400px;          /* FIXED 400px HEIGHT */
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow-md);
     transition: var(--transition);
+<<<<<<< HEAD
     position: relative;
    
 }
@@ -87,84 +90,54 @@
     width: 100%;
  max-height: 500px!important;
     height: auto;
-    display: block;
-    transition: var(--transition);
+=======
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.hero-banner {
+    width: 80%;
+    height: 400px;          /* EXACT 400px */
+    object-fit: cover;      /* PERFECT FILL */
+>>>>>>> 2289f8c04d02ccddad7cafb9b1f7140f531fc367
+    display: block;
+    border-radius: var(--border-radius);
+}
+<<<<<<< HEAD
  .hero-icon{
         color: #e63946;
         margin-right: 20px;
     }
 /* RIGHT SIDE - Payment Card (DESKTOP ONLY) */
+=======
+
+/* RIGHT SIDE - PERFECT 45% */
+>>>>>>> 2289f8c04d02ccddad7cafb9b1f7140f531fc367
 .hero-right.desktop-only {
-    flex: 1 1 40%;
-    max-width: 420px;
+    flex: 0 0 45%;          /* FIXED 45% */
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;    /* PERFECT CENTER */
+    padding: 2rem;
+    height: auto;
 }
 
-/* MOBILE PAYMENT CARD - PERFECT 150px SIDES */
-.mobile-payment-card {
-    display: none !important;
-}
-
-.mobile-payment-card .hero-card {
-    max-width: 200px;
-    /* width: calc(100% - 300px);  150px left + 150px right */
-    margin: 3rem auto 0;
-    padding: 2rem 1.5rem;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-}
-
-/* MOBILE - 150px LEFT/RIGHT MARGIN */
-@media (max-width: 768px) {
-    .mobile-payment-card {
-        display: block !important;
-        padding: 0 150px;  /* 150px left + 150px right */
-    }
-    
-    .hero-right.desktop-only {
-        display: none !important;
-    }
-}
-
-/* Small phones - reduce margin */
-@media (max-width: 600px) {
-    .mobile-payment-card {
-        padding: 0 75px;  /* 75px sides on small phones */
-       
-    }
-    
-    .mobile-payment-card .hero-card {
-        width: calc(100% - 150px);
-    }
-}
-
-/* Extra small phones */
-@media (max-width: 480px) {
-    .mobile-payment-card {
-        padding: 0 20px;  /* Full width on tiny screens */
-    }
-    
-    .mobile-payment-card .hero-card {
-        width: 100%;
-        margin: 2rem auto 0;
-    }
-}
-
-
-/* PAYMENT CARD COMMON STYLES */
+/* PERFECT CARD HEIGHT */
 .hero-card {
+    width: 100%;
+    max-width: 380px;
+    height:550px;          /* FIXED EVEN HEIGHT */
     background: var(--card-bg);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-md);
-    padding: 2.8rem 2.2rem;
-    width: 100%;
+    padding: 2.5rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
+    justify-content: space-between; /* PERFECT INTERNAL SPACING */
+    gap: 1.5rem;
     position: relative;
     overflow: hidden;
-    margin-top: 50px;
     transition: var(--transition);
 }
 
@@ -178,29 +151,24 @@
     background: linear-gradient(90deg, var(--primary-color), var(--primary-hover));
 }
 
-.hero-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.22);
-}
-
 .hero-card-title {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: 800;
     color: var(--text-primary);
-    margin: 0 0 1.2rem 0;
+    margin: 0 0 1rem 0;
+    text-align: center;
     letter-spacing: -0.02em;
 }
 
 .hero-plan {
     display: flex;
     align-items: center;
-    gap: 1.2rem;
-    padding: 1.4rem 1.4rem;
+    gap: 1rem;
+    padding: 1.4rem;
     border: 2px solid #e8e8e8;
     border-radius: 14px;
     cursor: pointer;
     transition: var(--transition);
-    position: relative;
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
 }
@@ -213,19 +181,17 @@
 }
 
 .hero-plan input[type="radio"] {
-    width: 22px;
-    height: 22px;
-    cursor: pointer;
+    width: 20px;
+    height: 20px;
     accent-color: var(--primary-color);
     flex-shrink: 0;
 }
 
 .hero-plan-text h6 {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 800;
     margin: 0;
     color: var(--text-primary);
-    letter-spacing: -0.01em;
 }
 
 .hero-plan-text small {
@@ -239,47 +205,37 @@
     justify-content: space-between;
     align-items: center;
     font-weight: 800;
-    font-size: 1.45rem;
-    padding-top: 1.4rem;
-    border-top: 2px solid #f0f0f0;
+    font-size: 1.4rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
     color: var(--text-primary);
 }
 
 .hero-amount {
     color: var(--primary-color) !important;
-    font-size: 1.5rem !important;
+    font-size: 1.6rem !important;
+    font-weight: 900;
+}
+
+/* BUTTONS - PERFECT HEIGHT */
+.hero-btn-primary, .hero-btn-secondary {
+    width: 100%;
+    padding: 1.2rem 0;
+    border-radius: 14px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .hero-btn-primary {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
     color: white;
-    font-weight: 800;
-    border: none;
-    border-radius: 14px;
-    padding: 1.3rem 0;
-    font-size: 1.25rem;
-    cursor: pointer;
     box-shadow: 0 10px 30px rgba(230, 57, 70, 0.4);
-    transition: var(--transition);
-    position: relative;
-    overflow: hidden;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.hero-btn-primary::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: left 0.5s;
-}
-
-.hero-btn-primary:hover::before {
-    left: 100%;
 }
 
 .hero-btn-primary:hover {
@@ -291,17 +247,10 @@
     background: linear-gradient(135deg, #f8f9fa, #f0f2f5);
     color: #666;
     border: 2px solid #e8e8e8;
-    border-radius: 14px;
-    padding: 1rem 0;
-    font-size: 1.05rem;
-    font-weight: 600;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
-    transition: var(--transition);
-    backdrop-filter: blur(10px);
 }
 
 .hero-btn-secondary:hover {
@@ -309,84 +258,42 @@
     border-color: var(--primary-color);
     color: var(--primary-color);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(230, 57, 70, 0.15);
 }
 
-.hero-btn-secondary i {
-    font-size: 1.25rem;
-    transition: var(--transition);
-}
-
-.hero-btn-secondary:hover i {
-    transform: scale(1.1);
-}
-
-/* TEXT BLOCK */
+/* TEXT BLOCK - FULL WIDTH */
 .hero-text-block {
+    width: 100%;
     max-width: 900px;
     margin: 0 auto 4rem;
-    padding: 2.5rem 3rem;
+    padding: 3rem 2rem;
     background: var(--card-bg);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-sm);
     text-align: center;
-    line-height: 1.5;
-    font-size: 1.15rem;
 }
 
 .hero-subtitle {
     color: var(--primary-color);
     font-weight: 700;
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+    margin-bottom: 2rem;
 }
 
-/* PERFECT RESPONSIVE BREAKPOINTS */
-
-/* Large Desktop */
-@media (max-width: 1200px) {
-    .hero.layout {
-        gap: 3rem;
-    }
-    .hero-left {
-        max-width: 600px;
-    }
-}
-
-/* Tablet */
-@media (max-width: 1024px) {
+/* MOBILE PERFECT */
+@media (max-width: 991px) {
     .hero.layout {
         flex-direction: column;
+        height: auto;
         gap: 3rem;
-        align-items: center;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .hero-left,
-    .hero-right.desktop-only {
-        max-width: 100%;
-    }
-    .hero-right.desktop-only {
-        justify-content: center;
-    }
-    .hero-banner-wrapper {
-        width: 70%;
-        align-self: center;
-    }
-}
-
-/* Mobile - KEY CHANGES HERE */
-@media (max-width: 768px) {
-    .main {
-        padding: 1.5rem 1rem;
+        padding: 0 1rem;
     }
     
-    .hero.layout {
-        padding-left: 1rem;
-        padding-right: 1rem;
-        gap: 2rem;
+    .hero-left, .hero-right {
+        flex: none;
+        width: 100%;
     }
     
+<<<<<<< HEAD
     .hero-title {
         text-align: center;
         font-size: 2.2rem;
@@ -398,75 +305,45 @@
     }
     
     /* HIDE DESKTOP PAYMENT CARD */
+=======
+>>>>>>> 2289f8c04d02ccddad7cafb9b1f7140f531fc367
     .hero-right.desktop-only {
         display: none !important;
     }
     
-    /* SHOW MOBILE PAYMENT CARD */
     .mobile-payment-card {
         display: block !important;
-        margin-bottom: 100px;
-         
-    }
-    
-    .hero-card {
-        /* padding: 2rem 1.8rem; */
-        margin-top: 0;
-         max-width: 400px!important;
-          margin: 3rem auto 0;
-    padding: 2rem 1.5rem;
-    
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
     }
 }
 
-/* Small Mobile */
 @media (max-width: 576px) {
-    .hero-title {
-        font-size: 2rem;
+    .hero.layout {
+        padding: 0 1rem;
     }
     .hero-line{
         text-align: left;
     }
     
     .hero-banner-wrapper {
-        width: 100%;
+        height: 350px;
+    }
+    
+    .hero-banner {
+        height: 350px;
     }
     .hero-icon{
         color: #e63946;
         margin-right: 20px;
     }
     .hero-card {
-        /* padding: 1.8rem 1.5rem; */
-    }
-    
-    .hero-card-title {
-        /* font-size: 1.4rem; */
-    }
-    
-    .hero-plan {
-        padding: 1.2rem 1.2rem;
-    }
-    
-    .hero-btn-primary,
-    .hero-btn-secondary {
-        font-size: 1.1rem;
-        padding: 1.1rem 0;
-    }
-    
-    .hero-amount-row {
-        font-size: 1.25rem;
-    }
-    
-    .hero-text-block {
-        padding: 1.5rem 1.2rem;
-        font-size: 1rem;
-        margin-bottom: 2rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.4rem;
+        height: 420px;
+        padding: 2rem 1.5rem;
     }
 }
+<<<<<<< HEAD
 
 /* High performance */
 .hero-banner-wrapper,
@@ -533,3 +410,5 @@
     padding: 2rem 1.5rem;
   }
 }
+=======
+>>>>>>> 2289f8c04d02ccddad7cafb9b1f7140f531fc367

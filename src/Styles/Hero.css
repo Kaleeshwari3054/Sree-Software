@@ -78,9 +78,15 @@
 }
 
 .hero-banner {
+<<<<<<< HEAD
     width: 80%;
     height: 400px;
     /* EXACT 400px */
+=======
+    width: 50%;
+    height: 700px;
+    max-height: none;
+>>>>>>> 2289f8c04d02ccddad7cafb9b1f7140f531fc367
     object-fit: cover;
     /* PERFECT FILL */
     display: block;

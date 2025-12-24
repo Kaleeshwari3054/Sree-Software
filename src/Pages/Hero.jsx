@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React from "react";
 // import banner from "../assets/Banner.jpeg";
 // import { useNavigate } from "react-router-dom";
@@ -193,6 +194,8 @@
 // export default Hero;
 
 
+=======
+>>>>>>> 2289f8c04d02ccddad7cafb9b1f7140f531fc367
 import React from "react";
 import banner from "../assets/Banner.jpeg";
 import { useNavigate } from "react-router-dom";

@@ -204,6 +204,7 @@ const Whatsappform = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
+<<<<<<< HEAD
       setIsLoading(true);
       const message = `👋 *New Enquiry*\n\n👤 *Name:* ${formData.name}\n🏢 *Company:* ${formData.company}\n📱 *Phone:* ${formData.phone}\n📧 *Email:* ${formData.email}\n📍 *Place:* ${formData.place}\n🗺️ *State:* ${formData.state}`;
       const whatsappUrl = `https://wa.me/919841419345?text=${encodeURIComponent(message)}`;
@@ -213,6 +214,11 @@ const Whatsappform = () => {
         window.open(whatsappUrl, '_blank');
         setIsLoading(false);
       }, 500);
+=======
+      const message = `Name: ${formData.name}\nCompany: ${formData.company}\nContact: ${formData.phone}\nEmail: ${formData.email}\nPlace: ${formData.place}\nState: ${formData.state}`;
+      const whatsappUrl = `https://wa.me/95000 60448?text=${encodeURIComponent(message)}`;
+      window.open(whatsappUrl, '_blank');
+>>>>>>> 2289f8c04d02ccddad7cafb9b1f7140f531fc367
     }
   };
 
