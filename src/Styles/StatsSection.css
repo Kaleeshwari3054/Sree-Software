@@ -1,115 +1,84 @@
-/* StatsSection.css - Advanced Premium Design */
-/* STATS WRAPPER - Perfect Centering */
+/* WRAPPER */
 .stats-wrapper {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  padding: 5rem 0;
+  padding: clamp(3rem, 6vw, 4rem) 0;   /* padding குறைஞ்சிருக்கும் */
   position: relative;
   overflow: hidden;
 }
 
-.stats-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #e63946, transparent);
-  opacity: 0.3;
-}
-
-/* CONTAINER FOR PERFECT CENTERING */
+/* CONTAINER */
 .stats-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;      /* Center horizontally */
-  align-items: center;          /* Center vertically */
-  gap: 3rem 4rem;               /* Vertical gap 3rem, Horizontal gap 4rem */
-  max-width: 800px;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem 2.5rem;                     /* gap சிறிது */
+  max-width: 720px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
+  
 }
 
-/* STAT CARDS - Flex Wrap + Side by Side */
+/* CARD SIZE + INNER PADDING */
 .stat-card {
   position: relative;
-  padding: 3rem 2rem;
-  border-radius: 24px;
+  border-radius: 20px;
   backdrop-filter: blur(20px);
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: all 0.3s ease;
   overflow: hidden;
-  width: 200px;                 /* Fixed width */
-  height: 100px;                /* Fixed height */
-  flex: 0 0 200px;              /* Don't grow/shrink, fixed 200px */
+
+  /* card சைஸ் சின்னதா */
+  width: 260px;
+  min-height: 150px;
+
+  flex: 0 0 220px;                      /* wrap ஆகும், but small width */
+  padding: 1.5rem 1.25rem;              /* உள்ளே spacing add பண்ணிருக்கும் */
+
   display: flex;
-  flex-direction: column;       /* Stack h2 + p vertically */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
 
-.stat-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  z-index: 2;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
 }
 
 /* COLORS */
 .red-card {
   background: linear-gradient(135deg, #e63946 0%, #d62828 100%);
-  color: white;
+  color: #fff;
   border: 1px solid rgba(230, 57, 70, 0.3);
-}
-
-.red-card::before {
-  background: linear-gradient(90deg, #ff6b6b, #ffa726, #ff6b6b);
+  padding-inline: 1.75rem;              /* LR padding controlled */
 }
 
 .white-card {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.96);
   color: #222;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-.white-card::before {
-  background: linear-gradient(90deg, #e63946, #f8f9fa, #e63946);
-}
-
+/* TEXT */
 .stat-card h2 {
-  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-size: clamp(1.6rem, 4.2vw, 2.6rem);
   font-weight: 900;
-  margin: 0 0 0.5rem 0;
+  margin-bottom: 0.35rem;
   letter-spacing: -0.03em;
-  line-height: 1;
+  line-height: 1.05;
 }
 
 .stat-card p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   margin: 0;
   opacity: 0.9;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.25px;
   text-transform: uppercase;
 }
 
-/* HOVER EFFECTS */
+/* HOVER */
 .stat-card:hover {
-  transform: translateY(-12px) scale(1.03);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
-}
-
-.red-card:hover {
-  background: linear-gradient(135deg, #d62828 0%, #c1121f 100%);
-}
-
-.white-card:hover {
-  background: rgba(255, 255, 255, 1);
-  border-color: #e63946;
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.18);
 }
 
 /* RESPONSIVE */

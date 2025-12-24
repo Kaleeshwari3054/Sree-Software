@@ -59,6 +59,7 @@
     box-shadow: var(--shadow-md);
     transition: var(--transition);
     position: relative;
+   
 }
 
 .hero-banner-wrapper::before {
@@ -84,11 +85,15 @@
 
 .hero-banner {
     width: 100%;
+ max-height: 500px!important;
     height: auto;
     display: block;
     transition: var(--transition);
 }
-
+ .hero-icon{
+        color: #e63946;
+        margin-right: 20px;
+    }
 /* RIGHT SIDE - Payment Card (DESKTOP ONLY) */
 .hero-right.desktop-only {
     flex: 1 1 40%;
@@ -388,7 +393,7 @@
     }
     
     .hero-banner-wrapper {
-        width: 80%;
+        width: 100%;
         align-self: center;
     }
     
@@ -419,11 +424,17 @@
     .hero-title {
         font-size: 2rem;
     }
+    .hero-line{
+        text-align: left;
+    }
     
     .hero-banner-wrapper {
         width: 100%;
     }
-    
+    .hero-icon{
+        color: #e63946;
+        margin-right: 20px;
+    }
     .hero-card {
         /* padding: 1.8rem 1.5rem; */
     }
@@ -477,4 +488,48 @@
     background: linear-gradient(90deg, var(--primary-color) 25%, var(--primary-hover) 50%, var(--primary-color) 75%) !important;
     background-size: 200% 100%;
     animation: shimmer 1.5s infinite;
+}
+
+
+
+/* MOBILE / TABLET: hide the payment card */
+@media (max-width: 991px) {
+  .hero.layout {
+    flex-direction: column;
+    height: auto;
+    gap: 3rem;
+    padding: 0 1rem;
+  }
+
+  .hero-left,
+  .hero-right {
+    flex: none;
+    width: 100%;
+  }
+
+  /* இங்கு hide */
+  .hero-right.desktop-only {
+    display: none !important;
+  }
+
+  .mobile-payment-card {
+    display: none !important; /* mobile card வேண்டாமே, so hide */
+  }
+}
+
+/* Extra small tweaks */
+@media (max-width: 576px) {
+  .hero.layout {
+    padding: 0 1rem;
+  }
+
+  .hero-banner-wrapper,
+  .hero-banner {
+    height: 350px;
+  }
+
+  .hero-card {
+    height: 420px;
+    padding: 2rem 1.5rem;
+  }
 }
