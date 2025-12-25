@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // import React from "react";
 // import banner from "../assets/Banner.jpeg";
 // import { useNavigate } from "react-router-dom";
@@ -193,9 +192,6 @@
 
 // export default Hero;
 
-
-=======
->>>>>>> 2289f8c04d02ccddad7cafb9b1f7140f531fc367
 import React from "react";
 import banner from "../assets/Banner.jpeg";
 import { useNavigate } from "react-router-dom";
@@ -214,6 +210,7 @@ import {
   FaClock,
   FaBan,
   FaShareAlt,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 
@@ -223,11 +220,37 @@ const Hero = () => {
   const handleRegister = () => {
     navigate("/paymentbutton");
   };
+    const handleWhatsApp = () => {
+    navigate("/whatsappform");  // 👈 WHATSAPP NAVIGATION
+  };
 
-  //  const handleRegister = () => {
-  //   navigate("/whatsappform");
-  // };
+    const handleShare = async () => {
+    const shareUrl = "https://web.almodesk.in"; // Full URL with https://
+    const shareData = {
+      title: "Check this page",
+      url: shareUrl,
+    };
 
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+      } catch (error) {
+        // WhatsApp fallback
+        window.open(
+          `https://wa.me/?text=${encodeURIComponent(
+            shareData.title + " " + shareUrl
+          )}`,
+          "_blank"
+        );
+      }
+    } else {
+      // Desktop fallback
+      navigator.clipboard.writeText(shareUrl);
+      alert("URL copied! Paste in WhatsApp");
+    }
+  };
+
+ 
   return (
     <div className="main">
       <div className="hero layout">
@@ -261,7 +284,7 @@ const Hero = () => {
             <button className="hero-btn-primary" onClick={handleRegister}>
               Register Now
             </button>
-            <button className="hero-btn-secondary">
+            <button className="hero-btn-secondary" onClick={handleShare}>
               <i className="bi bi-share"></i> Share this page
             </button>
           </div>
@@ -357,6 +380,15 @@ const Hero = () => {
             வளரட்டும்!
           </p>
         </div>
+      </div>
+       <div className="whatsapp-popup">
+        <button 
+          className="whatsapp-btn"
+          onClick={handleWhatsApp}
+          title="WhatsApp Support"
+        >
+          <FaWhatsapp size={24} />
+        </button>
       </div>
     </div>
   );

@@ -50,7 +50,7 @@ const Privacy = () => {
         <div className="policy-section">
           <h2>Contact Us</h2>
           <div className="contact-info">
-            <p><strong>Website:</strong> <a href="https://www.web.almodeat.in">www.web.almodeat.in</a></p>
+            <p><strong>Website:</strong> <a href="https://www.web.almodesk.in">www.web.almodesk.in</a></p>
             <p><strong>Email:</strong> <a href="mailto:sreesoftwares5@gmail.com">sreesoftwares5@gmail.com</a></p>
             <p><strong>WhatsApp:</strong> <a href="https://wa.me/919500941142">+91 95009 41142</a></p>
           </div>

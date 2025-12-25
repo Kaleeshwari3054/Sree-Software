@@ -204,21 +204,14 @@ const Whatsappform = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
-<<<<<<< HEAD
       setIsLoading(true);
-      const message = `👋 *New Enquiry*\n\n👤 *Name:* ${formData.name}\n🏢 *Company:* ${formData.company}\n📱 *Phone:* ${formData.phone}\n📧 *Email:* ${formData.email}\n📍 *Place:* ${formData.place}\n🗺️ *State:* ${formData.state}`;
-      const whatsappUrl = `https://wa.me/919841419345?text=${encodeURIComponent(message)}`;
-      
-      // Small delay for UX
       setTimeout(() => {
         window.open(whatsappUrl, '_blank');
         setIsLoading(false);
       }, 500);
-=======
       const message = `Name: ${formData.name}\nCompany: ${formData.company}\nContact: ${formData.phone}\nEmail: ${formData.email}\nPlace: ${formData.place}\nState: ${formData.state}`;
-      const whatsappUrl = `https://wa.me/95000 60448?text=${encodeURIComponent(message)}`;
+      const whatsappUrl = `https://wa.me/9500060448?text=${encodeURIComponent(message)}`;
       window.open(whatsappUrl, '_blank');
->>>>>>> 2289f8c04d02ccddad7cafb9b1f7140f531fc367
     }
   };
 
@@ -230,7 +223,7 @@ const Whatsappform = () => {
             <div className="card border-0 shadow-lg hover:shadow-xl transition-all duration-300 rounded-4">
               {/* Fixed Header */}
               <div className="card-header bg-danger text-white text-center py-5 position-relative overflow-hidden">
-                <div className="position-absolute top-0 end-0 w-50 h-100 bg-danger opacity-20"></div>
+                <div className="position-absolute top-0 end-0  bg-danger opacity-20"></div>
                 <h1 className="display-5 fw-bold mb-3">Contact Details</h1>
                 <p className="lead opacity-95 mb-0">Fill your details to send via WhatsApp</p>
               </div>

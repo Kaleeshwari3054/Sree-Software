@@ -153,11 +153,11 @@ const PaymentCard = () => {
           </div>
 
           <button className="hero-btn-primary" onClick={handleRegister}>
-            Registerss Now
+            Register Now
           </button>
 
           <button className="hero-btn-secondary" onClick={handleShare}>
-            <i className="bi bi-share"></i> Shar this page
+            <i className="bi bi-share"></i> Share this page
           </button>
         </div>
       </div>

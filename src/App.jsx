@@ -18,7 +18,7 @@
 // export default App;
 
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 
 import Hero from "./Pages/Hero.jsx";
 import Video from "./Pages/Video.jsx";
@@ -31,13 +31,10 @@ import StatsSection from "./Pages/StatsSection.jsx";
 // import Header from './Pages/Header.jsx';
 import PaymentCard from "./Pages/PaymentCard.jsx";
 import PaymentButton from "./Pages/Paymentbutton.jsx";
-// import Whatsappform from "./Pages/Whatsappform.jsx";
-
-// import PaymentButton from "./Pages/Paymentbutton.jsx";
-// import Whatsappform from "./Pages/Whatsappform.jsx";
+import Whatsappform from "./Pages/Whatsappform.jsx";
 function App() {
   return (
-    <>
+      <>  
       <ScrollToTop />
       <Routes>
         <Route
@@ -56,12 +53,10 @@ function App() {
         />
         <Route path="/privacy-policy" element={<Privacy />} />
         <Route path="/terms-and-conditions" element={<TermsConditions />} />
-        {/* <Route path="/payment" element={<PaymentButton />} /> */}
         <Route path="/paymentbutton" element={<PaymentButton />} />
-        {/* <Route path="/whatsappform" element={<Whatsappform />} /> */}
-        {/* <Route path="/whatsappform" element={<Whatsappform />} /> */}
+        <Route path="/whatsappform" element={<Whatsappform />} />
       </Routes>
-    </>
+   </>  
   );
 }
 

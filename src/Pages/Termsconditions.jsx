@@ -84,7 +84,7 @@ const TermsConditions = () => {
           <h2>Contact Information</h2>
           <div className="contact-info">
             <p><strong>Email:</strong> <a href="mailto:sreesoftwares5@gmail.com">sreesoftwares5@gmail.com</a></p>
-            <p><strong>Website:</strong> <a href="https://www.web.almodeat.in">www.web.almodeat.in</a></p>
+            <p><strong>Website:</strong> <a href="https://www.web.almodesk.in">www.web.almodesk.in</a></p>
           </div>
         </div>
       </div>
