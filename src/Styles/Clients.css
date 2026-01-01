@@ -5,7 +5,7 @@
   padding: 5rem 2rem;
   /* background: linear-gradient(135deg, #f9f9f9 0%, #e8f4f8 50%, #f0f4f8 100%); */
   overflow: hidden;
-  min-height: 300px;
+  min-height: 200px;
 }
 
 .clients-container {
@@ -16,7 +16,7 @@
 
 .clients-heading {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -158,7 +158,7 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .clients-strip {
-    padding: 4rem 1.5rem;
+    padding: 1rem 1rem;
   }
   
   .client-item {
@@ -168,7 +168,7 @@
 
 @media (max-width: 768px) {
   .clients-strip {
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
   }
   
   .clients-heading h2 {
@@ -191,20 +191,22 @@
 }
 
 @media (max-width: 480px) {
-  .clients-heading {
+  /* .clients-heading {
     margin-bottom: 3rem;
-  }
+  } */
   
-  .clients-subtitle {
-    font-size: 1.1rem;
-  }
   
   .client-item {
     flex: 0 0 120px;
+    max-height: 150px;
   }
   
   .client-item img {
-    max-height: 50px;
+    max-height: 100px;
+  }
+  .clients-strip-inner {
+    height: 80px!important;
+    border-radius: 16px;
   }
 }
 

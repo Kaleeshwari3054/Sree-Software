@@ -48,7 +48,7 @@
   background: linear-gradient(135deg, #e63946 0%, #d62828 100%);
   color: #fff;
   border: 1px solid rgba(230, 57, 70, 0.3);
-  padding-inline: 1.75rem;              /* LR padding controlled */
+  /* padding-inline: 2rem;              LR padding controlled */
 }
 
 .white-card {
@@ -117,7 +117,7 @@
   font-weight: 700;
   color: #222;
   text-align: center;
-  margin: 4rem 0 3rem 0;
+  margin: 2rem 0 1rem 0;
   position: relative;
   padding: 1rem 2rem;
   /* background: linear-gradient(135deg, rgba(230, 57, 70, 0.1), transparent); */
@@ -314,7 +314,7 @@
 /* RESPONSIVE PERFECTION */
 @media (max-width: 992px) {
   .stats-wrapper {
-    padding: 4rem 0;
+    padding: 1rem 0;
   }
   
   .stat-card {
@@ -335,16 +335,19 @@
   }
   
   .trusted-title {
-    margin: 3rem 1rem 2rem 1rem;
+    margin: 2rem 1rem 2rem 1rem;
     padding: 0.8rem 1.5rem;
   }
 }
 
 @media (max-width: 576px) {
   .stat-card h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
-  
+   .trusted-title {
+    margin: 0rem 0rem 0rem 0rem;
+    /* padding: 0.8rem 1.5rem; */
+  }
   .stat-card {
     padding: 2rem 1.2rem;
     margin-bottom: 1.5rem;

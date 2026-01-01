@@ -1,5 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900:wght@400;500;600;700&display=swap');
 
 * {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --font-primary: 'Inter', 'Lucida Sans', system-ui, sans-serif;
+}
+
+* {
+  font-family: var(--font-primary) !important;
+  font-weight: 500; /* Your preferred weight */
+  line-height: 1.6;
+}
+
+/* Tamil */
+.tamil-text { 
+  font-family: 'Inter', 'Noto Sans Tamil', var(--font-primary) !important; 
 }
