@@ -58,7 +58,7 @@
 
 /* PERFECT RESPONSIVE IMAGE */
 .hero-banner-wrapper {
-    width: 80%;
+    width: 60%;
     /* height: 400px; */
     border-radius: var(--border-radius);
     overflow: hidden;

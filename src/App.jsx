@@ -19,7 +19,7 @@
 
 import React from "react";
 import {Routes, Route } from "react-router-dom";
-
+import "./App.css";
 import Hero from "./Pages/Hero.jsx";
 import Video from "./Pages/Video.jsx";
 import Clients from "./Pages/Clients.jsx";
@@ -65,4 +65,4 @@ export default App;
 
 
 
-//updated code fully .. only change api key
+//updated code fully ..
