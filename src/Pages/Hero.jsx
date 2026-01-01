@@ -193,8 +193,7 @@
 // export default Hero;
 
 import React from "react";
-import banner from "../assets/sample.jpeg";
-import featuresImage from "../assets/Banner.jpeg";
+import banner from "../assets/Banner-hero.jpeg";
 import { useNavigate } from "react-router-dom";
 import "../Styles/Hero.css";
 

@@ -210,7 +210,8 @@ const Whatsappform = () => {
         setIsLoading(false);
       }, 500);
       const message = `Name: ${formData.name}\nCompany: ${formData.company}\nContact: ${formData.phone}\nEmail: ${formData.email}\nPlace: ${formData.place}\nState: ${formData.state}`;
-      const whatsappUrl = `https://wa.me/9500060448?text=${encodeURIComponent(message)}`;
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=919500941142&text=${encodeURIComponent(message)}`;
+      // https://api.whatsapp.com/send?phone=919500941142
       window.open(whatsappUrl, '_blank');
     }
   };

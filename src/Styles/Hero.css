@@ -53,13 +53,13 @@
     text-align: center;
     margin: 0;
     line-height: 1.2;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    /* font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; */
 }
 
 /* PERFECT RESPONSIVE IMAGE */
 .hero-banner-wrapper {
     width: 80%;
-    height: 400px;
+    /* height: 400px; */
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow-md);
@@ -71,7 +71,7 @@
 
 .hero-banner {
     width: 100%;
-    height: 900px;
+    /* height: 900px; */
     object-fit: contain;
     display: block;
     border-radius: var(--border-radius);
@@ -282,10 +282,18 @@
         padding: 0 1rem;
         gap: 2.5rem;
     }
+.hero-banner-wrapper {
+    width: 95%;
+    /* height: 320px; */
+    margin: 1rem auto;
+  }
 
-    .hero-banner-wrapper {
+  .hero-banner {
+    /* height: 100%; */
+    object-fit: contain;
+  }
+    /* .hero-banner-wrapper {
         height: 250px;
-        width: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -294,11 +302,11 @@
     .hero-banner {
         width: 100%;
     
-        height: 250px;
-        /* height: auto; */
+        height: 550px;
+        height: auto;
         object-fit: contain;
         display: block;
-    }
+    } */
 
     .hero-banner-wrapper:hover .hero-banner {
         transform: translateY(-4px) scale(1.02);
@@ -354,7 +362,45 @@
 }
 
 
+@media (max-width: 575px) {
+  .hero.layout {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
+  .hero-banner-wrapper {
+    width: 100%;
+    /* height: 280px; */
+    /* max-height: 250px; */
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
+
+  .hero-banner {
+    width: 100%;
+    /* height: 100%;  */
+    /* max-height: 280px; */
+    object-fit: contain; 
+    object-position: center top;
+    display: block;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease;
+  }
+
+
+  .hero-banner-wrapper:hover .hero-banner {
+    transform: scale(1.02);
+  }
+
+  .hero-left {
+    width: 100%;
+  }
+}
 /* WHATSAPP FIXED POPUP - Add to END of Hero.css */
 .whatsapp-popup {
   position: fixed;
