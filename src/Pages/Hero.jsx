@@ -193,7 +193,8 @@
 // export default Hero;
 
 import React from "react";
-import banner from "../assets/Banner.jpeg";
+import banner from "../assets/sample.jpeg";
+import featuresImage from "../assets/Banner.jpeg";
 import { useNavigate } from "react-router-dom";
 import "../Styles/Hero.css";
 
@@ -211,20 +212,24 @@ import {
   FaBan,
   FaShareAlt,
   FaWhatsapp,
+  FaVideo,
+  FaDesktop,
+  FaMobileAlt,
+  FaBullseye,
+  FaGift,
+  FaCreditCard,
 } from "react-icons/fa";
-
-
 
 const Hero = () => {
   const navigate = useNavigate();
   const handleRegister = () => {
     navigate("/paymentbutton");
   };
-    const handleWhatsApp = () => {
-    navigate("/whatsappform");  // 👈 WHATSAPP NAVIGATION
+  const handleWhatsApp = () => {
+    navigate("/whatsappform"); // 👈 WHATSAPP NAVIGATION
   };
 
-    const handleShare = async () => {
+  const handleShare = async () => {
     const shareUrl = "https://web.almodesk.in"; // Full URL with https://
     const shareData = {
       title: "Check this page",
@@ -250,13 +255,12 @@ const Hero = () => {
     }
   };
 
- 
   return (
     <div className="main">
       <div className="hero layout">
         {/* Left Side: Title + Banner Image */}
         <div className="hero-left">
-          <h1 className="hero-title">One Day One Lakh Challenge</h1>
+          <h1 className="hero-title">ONE DAY ONE LAKH CHALLENGE</h1>
           <div className="hero-banner-wrapper">
             <img src={banner} alt="Hero" className="hero-banner" />
           </div>
@@ -290,99 +294,104 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      <div className="hero-text-block">
-        <h4 className="hero-subtitle">
-          ஒரு நாள் – ஒரு லட்சம் சம்பாதிக்க Ready ஆ?
-        </h4>
-
-        <div className="hero-content">
-          <p className="hero-line">
-            <FaRupeeSign className="hero-icon income" />
-            ஒரு நாள் – ஒரு லட்சம் சம்பாதிங்க
-          </p>
-
-          <p className="hero-line">
-            <FaCheckCircle className="hero-icon success" />
-            பூஜ்ய ரூபாய் – பூஜ்ய ரிஸ்க் – பூஜ்ய முதலீடு
-          </p>
-
-          <p className="hero-line">
-            <FaRocket className="hero-icon rocket" />
-            இன்று தொடங்குங்க. இன்று உங்கள் வாழ்க்கையை மாற்றுங்க.
-          </p>
-
-          <p className="hero-line">
-            <FaHandshake className="hero-icon handshake" />
-            ஒரே ஒரு மெசேஜ்… ஒரு வாய்ப்பு… ஒரு புதிய எதிர்காலம்.
-          </p>
-
-          <p className="hero-line">
-            <FaBrain className="hero-icon brain" />
-            அனுபவம் தேவையில்லை.
-          </p>
-
-          <p className="hero-line">
-            <FaCheckCircle className="hero-icon success" />
-            சுத்தமான வளர்ச்சி. சுத்தமான வருமானம்.
-          </p>
-
-          <p className="hero-line">
-            <FaChartLine className="hero-icon chart" />
-            நாள் தின இலக்கு: ₹1,00,000
-          </p>
-
-          <p className="hero-line">
-            <FaHandshake className="hero-icon handshake" />
-            உங்க வேலை: Join → Learn → Earn
-          </p>
-
-          <p className="hero-line">
-            <FaTrophy className="hero-icon trophy" />
-            Build Your Dream. Build Your Income.
-          </p>
-
-          <p className="hero-line">
-            <FaLifeRing className="hero-icon support" />
-            100% Support | 24/7 Guidance
-          </p>
-
-          <p className="hero-line">
-            <span className="hero-icon income">₹</span>
-            <span className="hero-icon success">✓</span>
-            One Day One Lakh ஒரு வாக்குறுதி மட்டும் இல்ல… உங்கள் வாழ்க்கையை
-            மாற்றும் பயணம்.
-          </p>
-
-          <p className="hero-line">
-            <FaRocket className="hero-icon rocket" />
-            Start From Zero. Rise Like a Hero.
-          </p>
-
-          <p className="hero-line">
-            <FaClock className="hero-icon clock" />
-            Your Time Starts Now.
-          </p>
-
-          <p className="hero-line">
-            <FaFire className="hero-icon fire" />
-            குறைந்த இடங்கள் மட்டுமே – இப்போதே சேருங்கள்!
-          </p>
-
-          <p className="hero-line">
-            <FaBan className="hero-icon danger" />
-            இடங்கள் முடிந்ததும் மீண்டும் திறக்காது!
-          </p>
-
-          <p className="hero-line">
-            <FaShareAlt className="hero-icon share" />
-            உங்க நண்பர்களுக்கும் share பண்ணுங்க… அவர்களும் உங்களோட சேர்ந்து
-            வளரட்டும்!
-          </p>
-        </div>
+     
+      <div className="hero-text-block mobile-only">
+        <h4 className="hero-subtitle">ZERO RUPEES MARKETING</h4>
       </div>
-       <div className="whatsapp-popup">
-        <button 
+
+      <div className="hero-content">
+        <p className="hero-line">
+          <FaRupeeSign className="hero-icon income" />
+          Lifetime Settlement – ஒரே முறை சேர்த்து, வாழ்நாள் வருமானம்!
+        </p>
+        <p className="hero-line">
+          <FaRupeeSign className="hero-icon income" />
+          ஒரு நாள் – ஒரு லட்சம் சம்பாதிக்க Ready ஆ?
+        </p>
+
+        <p className="hero-line">
+          <FaCheckCircle className="hero-icon success" />
+          ஒரே முறை ரெஜிஸ்ட்ரேஷன் – Lifetime Access!
+        </p>
+
+        <p className="hero-line">
+          <FaBan className="hero-icon danger" />
+          ரெஜிஸ்ட்ரேஷன் மூடினா, மீண்டும் வராது!
+        </p>
+
+        <p className="hero-line">
+          <FaRocket className="hero-icon rocket" />
+          AI Image & Video Creation
+        </p>
+
+        <p className="hero-line">
+          <FaVideo className="hero-icon video" />
+          YouTube Setup & Editing
+        </p>
+
+        <p className="hero-line">
+          <FaShareAlt className="hero-icon share" />
+          WhatsApp & Social Automation
+        </p>
+
+        <p className="hero-line">
+          <FaDesktop className="hero-icon desktop" />
+          Landing Page & Payment Setup
+        </p>
+
+        <p className="hero-line">
+          <FaMobileAlt className="hero-icon mobile" />
+          Almodesk App – Tracking & Attendance
+        </p>
+
+        <p className="hero-line">
+          <FaBullseye className="hero-icon target" />
+          Database Targeting (India | Tamil Nadu | Chennai | Local)
+        </p>
+
+        <p className="hero-line">
+          <FaGift className="hero-icon gift" />
+          ₹30,000 Bonus – இப்போதே கிடைக்கும்!
+        </p>
+
+        <p className="hero-line">
+          <FaCreditCard className="hero-icon card" />
+          ₹499 + 18% GST – One-time, Lifetime Access
+        </p>
+
+        <p className="hero-line">
+          <FaBrain className="hero-icon brain" />
+          அனுபவம் தேவையில்லை. Join → Learn → Earn
+        </p>
+
+        <p className="hero-line">
+          <FaChartLine className="hero-icon chart" />
+          நாள் தின இலக்கு: ₹1,00,000
+        </p>
+
+        <p className="hero-line">
+          <FaLifeRing className="hero-icon support" />
+          100% Support | 24/7 Guidance
+        </p>
+
+        <p className="hero-line">
+          <FaFire className="hero-icon fire" />
+          Limited Slots – இப்போதே சேருங்கள்!
+        </p>
+
+        <p className="hero-line">
+          <FaShareAlt className="hero-icon share" />
+          நண்பர்களுக்கும் Share பண்ணுங்க!
+        </p>
+
+        <p className="hero-line">
+          <FaClock className="hero-icon clock" />
+          Your Time Starts Now. Rise Like a Hero!
+        </p>
+      </div>
+
+      <div className="whatsapp-popup">
+        <button
           className="whatsapp-btn"
           onClick={handleWhatsApp}
           title="WhatsApp Support"
