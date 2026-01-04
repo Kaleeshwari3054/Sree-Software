@@ -414,7 +414,17 @@
     width: 100%;
   }
 }
-
+.Bold{
+  font-weight: bolder;
+}
+.bolder{
+  font-weight: bolder;
+}
+.hero-subtitle-sub{
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 900;
+  margin-top: 0.5rem;
+}
 @media (min-width: 320px) {
     .hero-title {
     font-size: clamp(3rem, 12rem);

@@ -259,7 +259,10 @@ const Hero = () => {
       <div className="hero layout">
         {/* Left Side: Title + Banner Image */}
         <div className="hero-left">
-          <h1 className="hero-title">ONE DAY ONE LAKH <br/>CHALLENGE</h1>
+          <h1 className="hero-title">
+            ONE DAY ONE LAKH <br />
+            CHALLENGE
+          </h1>
           <div className="hero-banner-wrapper">
             <img src={banner} alt="Hero" className="hero-banner" />
           </div>
@@ -293,102 +296,74 @@ const Hero = () => {
           </div>
         </div>
       </div>
-     
+
       <div className="hero-text-block mobile-only">
         <h4 className="hero-subtitle">ZERO RUPEES MARKETING</h4>
+        <h5 className="hero-subtitle-sub">(Lifetime Settlement)</h5>
       </div>
 
       <div className="hero-content">
-  <p className="hero-line">
-    <FaRupeeSign className="hero-icon income" />
-    (Lifetime Settlement) One-time registration for lifetime access.
-  </p>
-  <p className="hero-line">
-    <FaRupeeSign className="hero-icon income" />
-    Once registration closes, this offer will not be available again.
-  </p>
+        <p className="hero-line">
+          🚀 One-time registration for lifetime access.
+        </p>
+        <p className="hero-line">
+          Once registration closes, this offer will not be available again.
+        </p>
 
-  <p className="hero-line">
-    <FaCheckCircle className="hero-icon success" />
-    What You Get - Lifetime Access!
-  </p>
+        <p className="hero-line">
+          <span className="bolder">What You Get </span>
+        </p>
 
-  <p className="hero-line">
-    <FaBan className="hero-icon danger" />
-    Limited Time - Closes Forever!
-  </p>
+        <p className="hero-line">🤖 AI Image & Video Creation</p>
 
-  <p className="hero-line">
-    <FaRocket className="hero-icon rocket" />
-     AI Image & Video Creation
-  </p>
+        <p className="hero-line">📺 YouTube Setup & Editing</p>
 
-  <p className="hero-line">
-    <FaVideo className="hero-icon video" />
-     YouTube Setup & Editing
-  </p>
+        <p className="hero-line">📲 WhatsApp & Social Automation</p>
 
-  <p className="hero-line">
-    <FaShareAlt className="hero-icon share" />
-     WhatsApp & Social Automation
-  </p>
+        <p className="hero-line">🌐 Landing Page & Payment Setup</p>
 
-  <p className="hero-line">
-    <FaDesktop className="hero-icon desktop" />
-     Landing Page & Payment Setup
-  </p>
+        <p className="hero-line">
+          📱 Almodesk App – Tracking and Attendance Management
+        </p>
 
-  <p className="hero-line">
-    <FaMobileAlt className="hero-icon mobile" />
-     Almodesk App – Tracking & Attendance
-  </p>
+        <p className="hero-line">
+          📊 Database Targeting (India | Tamil Nadu | Chennai | Local)
+        </p>
 
-  <p className="hero-line">
-    <FaBullseye className="hero-icon target" />
-     Database Targeting (India | Tamil Nadu | Chennai | Local)
-  </p>
+        <p className="hero-line">
+          Register and join our community immediately to access the ₹30,000
+          bonus instantly.
+        </p>
 
-  <p className="hero-line">
-    <FaGift className="hero-icon gift" />
-    ₹30,000 Bonus - Instant Access!
-  </p>
+        <p className="hero-line">
+          <span className="Bold">Registration Fee</span>
+        </p>
 
-  <p className="hero-line">
-    <FaCreditCard className="hero-icon gift" />
-     ₹499 + 18% GST — One-time Lifetime Access
-  </p>
+        <p className="hero-line">
+          <span className="Bold">
+            {" "}
+            💳 ₹499 + 18% GST — one-time payment, lifetime access
+          </span>
+        </p>
 
-  <p className="hero-line">
-    <FaBrain className="hero-icon brain" />
-    No Experience Needed. Join → Learn → Earn
-  </p>
+        <p className="hero-line">
+          <span className="Bold">
+            {" "}
+            👉 Register now. Don’t miss this chance.
+          </span>
+        </p>
 
-  <p className="hero-line">
-    <FaChartLine className="hero-icon chart" />
-    Daily Target: ₹1,00,000
-  </p>
+        <p className="hero-line">
+          <span className="Bold"> ⏳ Limited slots. Limited time. </span>
+        </p>
 
-  <p className="hero-line">
-    <FaLifeRing className="hero-icon support" />
-    100% Support | 24/7 Guidance
-  </p>
-
-  <p className="hero-line">
-    <FaFire className="hero-icon fire" />
-     Limited Slots - Register Now!
-  </p>
-
-  <p className="hero-line">
-    <FaShareAlt className="hero-icon share" />
-    Share with Friends!
-  </p>
-
-  <p className="hero-line">
-    <FaClock className="hero-icon clock" />
-    Your Time Starts Now. Rise Like a Hero!
-  </p>
-</div>
-
+        <p className="hero-line">
+          <span className="Bold">
+            {" "}
+            🔗 Share this opportunity with your friends.
+          </span>
+        </p>
+      </div>
 
       <div className="whatsapp-popup">
         <button
